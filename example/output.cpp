@@ -13,8 +13,8 @@
 #define rap(i,n) steprap((i),(n),1)
 
 using intV = std::vector<int>;
-
 using namespace std;
+
 namespace math
 {
 	double PI = 3.14159265359;
@@ -62,7 +62,6 @@ namespace math
 	}
 }
 
-using namespace std;
 // using StringMap = std::vector<std::vector<char>> map(h+2,vector<char>(w+2,'#'));
 namespace tmp {
     template <typename T> bool inArry(T x,vector<T> v);
@@ -86,16 +85,14 @@ namespace tmp {
     
 }
 
-using namespace std;
 
 signed main (){
-	string s;
-	cin >> s;
-	rap(i,s.size()){
-		if(s[i]==','){
-			s[i] = ' ';
-		}
-	}
-	cout<<s<<endl;
+	//	Example
+	//	ユークリッドの互除法を用いて二つの自然数の最大公約数を求める
+	//	関数の詳細は./include/math.cpp
+	
+	int a,b;
+	cin >> a >> b;
+	cout<<math::gcm(a,b)<<endl;
 	return 0;
 }

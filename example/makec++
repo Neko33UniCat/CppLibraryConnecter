@@ -8,6 +8,7 @@ cd ./build
 touch copy.cpp
 cat ./include/*.cpp main.cpp > copy.cpp
 sed -i -e  '/#include/d' copy.cpp 
+sed -i -e '/using namespace/d' copy.cpp
 cat include.cpp copy.cpp > output.cpp
 g++ -std=c++17 output.cpp -o output
 mv output output.cpp ../

@@ -13,3 +13,5 @@
 #define rap(i,n) steprap((i),(n),1)
 
 using intV = std::vector<int>;
+using namespace std;
+using namespace math;

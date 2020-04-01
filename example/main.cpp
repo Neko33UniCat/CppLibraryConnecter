@@ -5,13 +5,12 @@
 using namespace std;
 
 signed main (){
-	string s;
-	cin >> s;
-	rap(i,s.size()){
-		if(s[i]==','){
-			s[i] = ' ';
-		}
-	}
-	cout<<s<<endl;
+	//	Example
+	//	ユークリッドの互除法を用いて二つの自然数の最大公約数を求める
+	//	関数の詳細は./include/math.cpp
+	
+	int a,b;
+	cin >> a >> b;
+	cout<<math::gcm(a,b)<<endl;
 	return 0;
 }
