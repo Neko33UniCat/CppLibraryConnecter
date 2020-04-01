@@ -13,3 +13,7 @@
 * include.cppにSTDlibraryや#defineを書く
 
 * main関数をmain.cppに書く。main.cppはinclude.cppと同じディレクトリに置く
+
+`$ sudo chmod 777 ./makec++`
+
+`$ ./makec++`
